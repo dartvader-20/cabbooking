@@ -22,7 +22,6 @@ const HomePage = () => {
     ];
     const [currentSlide, setCurrentSlide] = React.useState(0);
 
-
     const handleSlideChange = index => {
         setCurrentSlide(index);
     };
