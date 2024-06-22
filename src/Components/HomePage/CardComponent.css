@@ -1,0 +1,8 @@
+.card-root {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-root:hover {
+    transform: scale(1.1);
+  }
+  
