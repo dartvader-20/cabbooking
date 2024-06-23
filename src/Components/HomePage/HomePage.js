@@ -57,7 +57,7 @@ const HomePage = () => {
                 </div>
                 <div style={{ padding: 20, display: 'flex', flexDirection: 'row' }}>
                     <CallIcon />
-                    <Typography>Easy Phone Bookingg</Typography>
+                    <Typography>Easy Phone Booking Sama</Typography>
                 </div>
                 <div style={{ padding: 20, display: 'flex', flexDirection: 'row' }}>
                     <CalendarMonthIcon />
