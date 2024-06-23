@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20' # Ensure this matches the Node.js version you are using
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
@@ -27,8 +27,8 @@ jobs:
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
-      - name: Deploy to Firebase Hosting
+      - name: Deploy to Firebase Hosting for ${{ secrets.FIREBASE_TOKEN }
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  # Use the secret here
         run: |
-          firebase deploy --only hosting --project 108277666070
+          firebase deploy --only hosting --project <your-firebase-project-id> --token $FIREBASE_TOKEN
