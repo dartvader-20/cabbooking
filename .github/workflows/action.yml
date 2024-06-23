@@ -31,4 +31,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  # Use the secret here
         run: |
-          firebase deploy --only hosting --project <your-firebase-project-id> --token $FIREBASE_TOKEN
+          firebase deploy --only hosting --project 108277666070 --token $FIREBASE_TOKEN
