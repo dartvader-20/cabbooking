@@ -19,6 +19,9 @@ jobs:
         run: npm install
         working-directory: ./.github/actions/hello-world-action
       - name: Use local hello-world-action
+        id: hello
         uses: ./.github/actions/hello-world-action
         with:
           name: 'GitHub User'
+      - name: Display greeting
+        run: echo "Greeting: ${{ steps.hello.outputs.greetingMessage }}"
