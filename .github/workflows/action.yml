@@ -24,4 +24,5 @@ jobs:
         with:
           name: 'GitHub User'
       - name: Display greeting
-        run: echo "Greeting: ${{ steps.hello.outputs.greetingMessage }}"
+        run: |
+          echo "Greeting: ${{ steps.hello.outputs.greetingMessage }}"
