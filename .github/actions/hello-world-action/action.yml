@@ -1,6 +1,6 @@
 name: 'Hello World Action'
 description: 'A simple hello world action'
-author: 'Your Name'
+author: 'Chandan Mohan'
 
 inputs:
   name:
