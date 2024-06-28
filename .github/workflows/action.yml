@@ -27,7 +27,7 @@ jobs:
         run: |
           echo "Greeting: ${{ steps.hello.outputs.greetingMessage }}"
       - name: Run and save output
-      - shell: bash
+        shell: bash
         run: |
           expr 1 + 1 > output.log
       - name: Upload output file
