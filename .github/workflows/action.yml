@@ -20,3 +20,5 @@ jobs:
         working-directory: ./.github/actions/hello-world-action
       - name: Use local hello-world-action
         uses: ./.github/actions/hello-world-action
+        with:
+          name: 'GitHub User'
