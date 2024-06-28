@@ -2,8 +2,9 @@ const core = require('@actions/core');
 
 try {
   const nameToGreet = core.getInput('name');
-  console.log(`Hello, ${nameToGreet}!`);
-  core.setOutput('greeting', `Hello, ${nameToGreet}!`);
+  const greeting = `Hello, ${nameToGreet}!`;
+  console.log(greeting);
+  core.setOutput('greetingMessage', greeting);
 } catch (error) {
   core.setFailed(error.message);
 }
