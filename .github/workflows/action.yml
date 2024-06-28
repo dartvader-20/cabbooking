@@ -1,5 +1,4 @@
-name: Deploy to Firebase
-
+name: Checking Custom Action
 on:
   push:
     branches:
