@@ -1,4 +1,5 @@
 name: Checking Custom Action
+
 on:
   push:
     branches:
