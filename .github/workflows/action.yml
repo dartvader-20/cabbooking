@@ -22,7 +22,7 @@ jobs:
         id: hello # This is the ID of the step
         uses: ./.github/actions/hello-world-action
         with:
-          name: 'GitHub User'
+          name: ${{ github.actor }}
       - name: Display greeting
         run: |
           echo "Greeting: ${{ steps.hello.outputs.greetingMessage }}"
